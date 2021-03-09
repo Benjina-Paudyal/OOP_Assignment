@@ -2,21 +2,21 @@
 
 namespace OOP_Assignment
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Audi audi = new Audi("4C30", "Audi", new DateTime(2018, 3, 5), "Q7");
+            audi.GetInfo();
 
-            Bil bil = new Bil("Nissan", new DateTime(2019, 9, 12));
-            Console.WriteLine ("Bil's brand:"+ bil.GetMærke() + "\n" + "Bil's alder :"+bil.Alder);
+            Console.WriteLine("Inspection Date: "+ audi.SynDato);
+            Console.WriteLine(audi.GetInfo ("The car is now inspected and everything is fine."));
 
-            Bil bilOriginal = bil;
-            bil.Alder = 55;
-            bil.Alder = 100;
-            Console.WriteLine(bil.Alder);
-            Console.WriteLine(bilOriginal.Alder);
 
-            Console.WriteLine("Bil's brand:" + bil.GetMærke() + "\n" + "Bil's alder :" + bil.Alder);
+            //Bil bil = new Bil("Nissan", new DateTime(2019, 9, 12),"5BD3");
+            //Console.WriteLine ("Bil's brand:"+ bil.GetMærke() + "\n" + "Bil's alder :"+bil.Alder);
+
+            Console.ReadKey();
 
         }
     }
