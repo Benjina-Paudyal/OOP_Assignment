@@ -63,8 +63,15 @@ namespace OOP_Assignment
             
             foreach (var bil in sortAudis)
             {
-                Console.WriteLine("  Årgang: "+ bil.Årgang+ "  MotorStørrelse: " + bil.MotorStørrelse+ "  Model: "+ bil.Model+"  Farve: "+bil.Farve);
+                //Console.WriteLine("  Årgang: "+ bil.Årgang+ "  MotorStørrelse: " + bil.MotorStørrelse+ "  Model: "+ bil.Model+"  Farve: "+bil.Farve);
+
+                Console.WriteLine();
+                Console.WriteLine( "  Årgang: " + bil.Årgang);
+                Console.WriteLine("  MotorStørrelse: " + bil.MotorStørrelse);
+                Console.WriteLine("  Model: " + bil.Model);
+                Console.WriteLine("  Farve: " + bil.Farve);
             }
+            
 
             Console.ReadKey(); 
 
