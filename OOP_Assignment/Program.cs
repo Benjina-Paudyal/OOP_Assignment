@@ -43,6 +43,8 @@ namespace OOP_Assignment
             
             try
             {
+                // LINQ med Lamda
+
                 sortAudis = Audis.Where(b => b.Farve == "Sort").ToList();
             }
 
