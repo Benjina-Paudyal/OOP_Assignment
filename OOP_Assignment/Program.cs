@@ -39,8 +39,10 @@ namespace OOP_Assignment
                 Console.WriteLine(exc.Message);
             }
 
-            List<AudiModel> sortAudis = new List<AudiModel>();
             
+
+            List<AudiModel> sortAudis = new List<AudiModel>(); // declaration must be before try
+
             try
             {
                 // LINQ med Lamda
